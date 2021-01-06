@@ -1,0 +1,83 @@
+.HeaderNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  padding: 0.25rem;
+  color: inherit;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.HeaderNav_navList.HeaderNav_isElastic__2pgDh {
+  flex-grow: 1;
+}
+
+.HeaderNav_navList {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0.5rem;
+  margin: 0;
+  list-style: none;
+}
+.NavItem_navItem__ObetJ a {
+  line-height: 2rem;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.NavItem_navItem__ObetJ,
+.NavItem_navItem__ObetJ a {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+.NavItem_navItem__ObetJ {
+  position: relative;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  height: 30px;
+  border-radius: 0.25rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.HeaderNav_logotype__2_Aaa {
+  margin-left: 0.5rem;
+  font-weight: 700;
+  color: black;
+}
+.Login {
+  color: black;
+}
+.NavItem_navItem__ObetJ.NavItem_isPrimary__tSx7H {
+  padding: 0.25rem 0.75rem;
+  color: #fff;
+  background-color: #53f;
+  transition: background-color 0.2s ease;
+}
+.hideForPhone {
+  color: #fff;
+}
+
+@media (min-width: 521px) {
+  .showForPhoneOnly {
+    display: none !important;
+  }
+}
+
+@media (max-width: 521px) {
+  .showForPhoneOnly {
+    color: white;
+  }
+  .hideForPhone {
+    display: none !important;
+  }
+}
