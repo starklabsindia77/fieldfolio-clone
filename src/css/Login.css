@@ -1,0 +1,237 @@
+.hkRQqq {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 12%);
+  font-family: BlinkMacSystemFont, -apple-system, "Inter UI", Segoe UI, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 100%;
+} /*!sc*/
+.Heading-zo0nxg-0 {
+  content: "hkRQqq,";
+} /*!sc*/
+.cDHahY {
+  margin-bottom: 2.75rem;
+} /*!sc*/
+.FormContainers__InputGroup-mmcuqf-1 {
+  content: "cDHahY,";
+} /*!sc*/
+.jXhYOT {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 18rem;
+} /*!sc*/
+@media (max-width: 520px) {
+  .jXhYOT {
+    width: calc(100vw - 3rem);
+  }
+} /*!sc*/
+.jXhYOT form {
+  width: 100%;
+} /*!sc*/
+.FormContainers__VerticalFormContainer-mmcuqf-2 {
+  content: "jXhYOT,";
+} /*!sc*/
+.bPLApc {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+} /*!sc*/
+.AuthFormContainer__AuthFormLogo-sc-87on2w-1 {
+  content: "bPLApc,";
+} /*!sc*/
+.jzRrbv {
+  width: 100%;
+  text-align: center;
+} /*!sc*/
+.AuthFormContainer__AuthFormHeader-sc-87on2w-2 {
+  content: "jzRrbv,";
+} /*!sc*/
+.deAeGx {
+  width: 100%;
+  margin-top: 1.5rem;
+  text-align: center;
+} /*!sc*/
+.AuthFormContainer__AuthFormBody-sc-87on2w-3 {
+  content: "deAeGx,";
+} /*!sc*/
+.epYhwJ {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 6rem;
+} /*!sc*/
+.AuthPageContainer-sc-8fip7o-0 {
+  content: "epYhwJ,";
+} /*!sc*/
+.jewHIj {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 0.75rem;
+  -webkit-appearance: none;
+  border-radius: var(--elementBorderRadius);
+  border: solid hsl(0, 0%, 85%) 1px;
+  color: hsl(0, 0%, 12%);
+  box-sizing: border-box;
+  opacity: 1;
+  -webkit-transition-property: opacity, color, background-color, border-color,
+    box-shadow;
+  transition-property: opacity, color, background-color, border-color,
+    box-shadow;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+} /*!sc*/
+@media (max-width: 520px) {
+  .jewHIj {
+    font-size: 16px;
+  }
+} /*!sc*/
+.jewHIj:focus {
+  border-color: hsl(250, 100%, 60%);
+  box-shadow: 0 0 0 4px hsla(250, 100%, 80%, 0.6);
+  outline: 0 none;
+} /*!sc*/
+.jewHIj::-webkit-input-placeholder {
+  color: hsl(0, 0%, 40%);
+} /*!sc*/
+.jewHIj::-moz-placeholder {
+  color: hsl(0, 0%, 40%);
+} /*!sc*/
+.jewHIj:-ms-input-placeholder {
+  color: hsl(0, 0%, 40%);
+} /*!sc*/
+.jewHIj::placeholder {
+  color: hsl(0, 0%, 40%);
+} /*!sc*/
+.jewHIj[type="search"] {
+  -webkit-appearance: none;
+} /*!sc*/
+.Input-ebgq5k-3 {
+  content: "jewHIj,";
+} /*!sc*/
+.hfrtTR {
+  position: relative;
+} /*!sc*/
+.FormInput__InputContainer-we5g1j-0 {
+  content: "hfrtTR,";
+} /*!sc*/
+.iNfBGm {
+  position: relative;
+  margin-bottom: 1.75rem;
+} /*!sc*/
+
+.FormInput__FieldContainer-we5g1j-1 {
+  content: "iNfBGm,";
+} /*!sc*/
+
+/* new css */
+.Button_button__1YLw1 {
+  --colorButtonDefaultText: #1f1f1f;
+  --colorButtonDefaultBackground: #fafafa;
+  --colorButtonDefaultBorder: #d9d9d9;
+  --colorButtonDefaultHoverBackground: #f7f7f7;
+  --colorButtonDefaultDisabledText: grey;
+  --colorButtonDefaultDisabledBackground: hsla(0, 0%, 98%, 0.8);
+  --colorButtonPrimaryText: #fff;
+  --colorButtonPrimaryBackground: var(--colorPrimary);
+  --colorButtonPrimaryHoverBackground: #3b19e6;
+  --colorButtonPrimaryDisabledBackground: #775cff;
+  --colorButtonReverseText: #000;
+  --colorButtonReverseBackground: hsla(0, 0%, 100%, 0.97);
+  --colorButtonReverseHoverBackground: #fff;
+  --colorButtonReverseDisabledBackground: hsla(0, 0%, 100%, 0.7);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  border: 1px solid var(--colorButtonDefaultBorder);
+  border-radius: var(--elementBorderRadius);
+  box-shadow: none;
+  color: var(--colorButtonDefaultText);
+  background-color: var(--colorButtonDefaultBackground);
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: center;
+  text-decoration: none;
+  transition-property: opacity, color, background-color, border-color,
+    box-shadow, transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.Button_button__1YLw1.Button_primary__z80TZ {
+  border: none;
+  color: #fff;
+  background-color: #53f;
+}
+.Button_button__1YLw1.Button_isBlock__g_3iP {
+  width: 100%;
+}
+.Button_buttonInner__vKlOI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Button_label__2TWeJ {
+  display: inline-block;
+  padding: 0 0.625rem;
+}
+.LoginForm_fineprint__Omj-R {
+  margin-top: 1.25rem;
+  margin-bottom: 3rem;
+}
+.LoginForm_mutedLink__3tSCE {
+  color: #999;
+}
+input {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: textfield;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 2px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
