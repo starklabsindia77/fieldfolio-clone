@@ -1,12 +1,13 @@
 import React from "react";
 import "../css/Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <nav className="HeaderNav">
       <ul className="HeaderNav_navList HeaderNav_isElastic__2pgDh">
         <li className="NavItem_navItem__ObetJ">
-          <a href="/">
+          <Link to="/">
             <svg width="24" height="24" viewBox="0 0 48 48" className="">
               <defs>
                 <linearGradient
@@ -26,20 +27,20 @@ function Header() {
               ></path>
             </svg>
             <span className="HeaderNav_logotype__2_Aaa">Fieldfolio</span>
-          </a>
+          </Link>
         </li>
       </ul>
       <ul className="HeaderNav_navList">
         <li className="NavItem_navItem__ObetJ NavItem_isPrimary__tSx7H">
-          <a href="/signup/retailer">
+          <Link to="/signup/retailer">
             <span className="showForPhoneOnly">Signup</span>
             <span className="hideForPhone">Signup Free</span>
-          </a>
+          </Link>
         </li>
         <li className="NavItem_navItem__ObetJ">
-          <a data-ref="login" className="Login" href="/login">
+          <Link to="/login" className="Login">
             Login
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

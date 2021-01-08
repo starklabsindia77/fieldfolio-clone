@@ -7,9 +7,12 @@ import { useStateValue } from "./config/StateProvider";
 // components //
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import FooterBottom from "./components/FooterBottom";
 //pages //
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Retailer from "./pages/signup/Retailer";
+import Wholesaler from "./pages/signup/Wholesaler";
 import Payment from "./pages/Payment";
 import Orders from "./pages/Orders";
 import Checkout from "./pages/Checkout";
@@ -50,6 +53,14 @@ function App() {
           </Route>
           <Route path="/login">
             <Login /> {/* Login Component */}
+          </Route>
+          <Route path="/signup/retailer">
+            <Retailer /> {/* Retailer Component */}
+            <FooterBottom />
+          </Route>
+          <Route path="/signup/wholesaler">
+            <Wholesaler /> {/* Wholesaler Component */}
+            <FooterBottom />
           </Route>
           <Route path="/checkout">
             <Header /> {/* Header Component */}

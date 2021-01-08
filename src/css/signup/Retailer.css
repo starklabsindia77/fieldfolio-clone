@@ -1,0 +1,237 @@
+small {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.dwtqTs {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 0px;
+  background: rgb(255, 255, 255);
+}
+
+.hneQfM {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  flex: 1 1 0%;
+  width: 100%;
+}
+
+.facORo {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  width: 100%;
+  padding-bottom: 6rem;
+}
+
+.fysHjX {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 22rem;
+}
+.dLXoYj {
+  width: 100%;
+}
+.dLXoYj .heading {
+  font-weight: 700;
+}
+.dLXoYj .heading,
+.dLXoYj .subhead {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0px;
+}
+
+.fttjjT {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.yewmZ {
+  display: flex;
+  height: 0.25rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 0.125rem;
+  overflow: hidden;
+}
+
+.ibCKwd {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(85, 51, 255);
+  border-radius: 0.125rem;
+  transition: all 285ms ease-in-out 0s;
+  width: 25%;
+}
+
+.hpLMXL {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.fysHjX form {
+  width: 100%;
+}
+
+.cDHahY {
+  margin-bottom: 2.75rem;
+}
+
+.cWfKVe {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.gjraxJ {
+  padding-top: 0px;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  color: rgb(179, 179, 179);
+}
+
+.hZNIvq {
+  display: inline;
+  text-align: inherit;
+  font-family: BlinkMacSystemFont, -apple-system, "Inter UI", "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: inherit !important;
+}
+
+.hfrtTR {
+  position: relative;
+}
+
+.fsNzQL {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.iulwrg {
+  margin: 0.25rem 0.75rem 0px 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.iNfBGm {
+  position: relative;
+  margin-bottom: 1.75rem;
+}
+
+.Button_label__2TWeJ {
+  display: inline-block;
+  padding: 0 0.625rem;
+}
+
+.fhbqnb {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  color: rgb(150, 148, 158);
+  background-color: rgb(28, 26, 35);
+}
+
+.fysHjX {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 22rem;
+}
+
+.dGxXoJ {
+  margin-bottom: 0px;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.kRDaVa {
+  margin-bottom: 2rem;
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+.Button_buttonInner__vKlOI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Button_label__2TWeJ {
+  color: #fff;
+  display: inline-block;
+  padding: 0 0.625rem;
+}
+
+.Button_button__1YLw1.Button_isBlock__g_3iP {
+  width: 100%;
+}
+
+.Button_button__1YLw1.Button_primary__z80TZ {
+  border: none;
+  color: #fff;
+  background-color: #53f;
+}
+
+.Button_button__1YLw1 {
+  --colorButtonDefaultText: #1f1f1f;
+  --colorButtonDefaultBackground: #fafafa;
+  --colorButtonDefaultBorder: #d9d9d9;
+  --colorButtonDefaultHoverBackground: #f7f7f7;
+  --colorButtonDefaultDisabledText: grey;
+  --colorButtonDefaultDisabledBackground: hsla(0, 0%, 98%, 0.8);
+  --colorButtonPrimaryText: #fff;
+  --colorButtonPrimaryBackground: #53f;
+  --colorButtonPrimaryHoverBackground: #3b19e6;
+  --colorButtonPrimaryDisabledBackground: #775cff;
+  --colorButtonReverseText: #000;
+  --colorButtonReverseBackground: hsla(0, 0%, 100%, 0.97);
+  --colorButtonReverseHoverBackground: #fff;
+  --colorButtonReverseDisabledBackground: hsla(0, 0%, 100%, 0.7);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  border: 1px solid var(--colorButtonDefaultBorder);
+  border-radius: var(--elementBorderRadius);
+  box-shadow: none;
+  color: var(--colorButtonDefaultText);
+  background-color: var(--colorButtonDefaultBackground);
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: center;
+  text-decoration: none;
+  transition-property: opacity, color, background-color, border-color,
+    box-shadow, transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
