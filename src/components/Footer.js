@@ -4,12 +4,12 @@ import "../css/Footer.css";
 import FooterBottom from "./FooterBottom";
 function Footer() {
   return (
-    <div class="iJiBDD">
-      <footer class="MarketingFooter_footer__3vEwh">
-        <div class="ResponsiveContainers__Base-sc-4w117l-0 ResponsiveContainers__WideContainer-sc-4w117l-3 ggAeeZ">
-          <div class="MarketingFooter_footerRow__1cYIP">
-            <div class="MarketingFooter_logoColumn__1xuHY MarketingFooter_footerColumn__2l1zp">
-              <svg width="56" height="56" viewBox="0 0 48 48" class="">
+    <div className="iJiBDD">
+      <footer className="MarketingFooter_footer__3vEwh">
+        <div className="ResponsiveContainers__Base-sc-4w117l-0 ResponsiveContainers__WideContainer-sc-4w117l-3 ggAeeZ">
+          <div className="MarketingFooter_footerRow__1cYIP">
+            <div className="MarketingFooter_logoColumn__1xuHY MarketingFooter_footerColumn__2l1zp">
+              <svg width="56" height="56" viewBox="0 0 48 48" className="">
                 <defs>
                   <linearGradient
                     x1="50%"
@@ -18,8 +18,8 @@ function Footer() {
                     y2="100%"
                     id="linearGradient"
                   >
-                    <stop stop-color="#53F" offset="0%"></stop>
-                    <stop stop-color="#309" offset="100%"></stop>
+                    <stop stopColor="#53F" offset="0%"></stop>
+                    <stop stopColor="#309" offset="100%"></stop>
                   </linearGradient>
                 </defs>
                 <path
@@ -28,7 +28,7 @@ function Footer() {
                 ></path>
               </svg>
             </div>
-            <div class="MarketingFooter_footerColumn__2l1zp">
+            <div className="MarketingFooter_footerColumn__2l1zp">
               <h4>For Wholesalers</h4>
               <ul>
                 <li>
@@ -54,7 +54,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div class="MarketingFooter_footerColumn__2l1zp">
+            <div className="MarketingFooter_footerColumn__2l1zp">
               <h4>For Retailers</h4>
               <ul>
                 <li>
@@ -71,7 +71,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div class="MarketingFooter_footerColumn__2l1zp">
+            <div className="MarketingFooter_footerColumn__2l1zp">
               <h4>For Reps</h4>
               <ul>
                 <li>
@@ -88,7 +88,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div class="MarketingFooter_footerColumn__2l1zp">
+            <div className="MarketingFooter_footerColumn__2l1zp">
               <h4>Support</h4>
               <ul>
                 <li>

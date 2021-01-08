@@ -1,8 +1,35 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react";
 import "../../css/signup/Retailer.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { auth, db } from "../../config/firebase";
 
 function Retailer() {
+  const history = useHistory();
+  // eslint-disable-next-line no-unused-vars
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+
+  const register = (e) => {
+    e.preventDefault();
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        let insert = db.collection("user_profile").doc(auth.user.uid).set({
+          firstName: firstName,
+          lastName: lastName,
+          role: "Retailer",
+        });
+        //console.log(auth?.uid);
+        if (auth) {
+          history.push("/");
+        }
+      })
+      .catch((error) => alert(error.message));
+  };
   return (
     <div className="BasePage__BasePageContainer-sc-1tto81y-0 dwtqTs">
       <main className="BasePage__Main-sc-1tto81y-1 hneQfM">
@@ -52,9 +79,11 @@ function Retailer() {
                     <div className="FormInput__InputContainer-we5g1j-0 hfrtTR">
                       <input
                         type="text"
-                        name="first_name"
+                        name="firstName"
                         title="First Name"
                         className="Input-ebgq5k-3 jewHIj"
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
                       />
                     </div>
                   </div>
@@ -65,9 +94,11 @@ function Retailer() {
                     <div className="FormInput__InputContainer-we5g1j-0 hfrtTR">
                       <input
                         type="text"
-                        name="last_name"
+                        name="lastName"
                         title="Last Name"
                         className="Input-ebgq5k-3 jewHIj"
+                        value={lastName}
+                        onChange={(e) => setLastName(e.target.value)}
                       />
                     </div>
                   </div>
@@ -82,6 +113,8 @@ function Retailer() {
                         autoComplete="username"
                         title="Email"
                         className="Input-ebgq5k-3 jewHIj"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
                   </div>
@@ -96,6 +129,8 @@ function Retailer() {
                         autoComplete="new-password"
                         title="Password"
                         className="Input-ebgq5k-3 jewHIj"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                       />
                     </div>
                   </div>
@@ -128,6 +163,7 @@ function Retailer() {
                 </div>
                 <button
                   type="submit"
+                  onClick={register}
                   className="Button_button__1YLw1 Button_primary__z80TZ default Button_isBlock__g_3iP"
                 >
                   <div className="Button_buttonInner__vKlOI">

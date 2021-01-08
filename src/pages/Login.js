@@ -1,12 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Login.css";
+import { Link, useHistory } from "react-router-dom";
+import { auth, db } from "../config/firebase";
 
 function Login() {
+  const history = useHistory();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const login = (e) => {
+    e.preventDefault();
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then(async (auth) => {
+        console.log(auth.user.uid);
+        const id = auth.user.uid;
+        const user_role = (
+          await db.collection("user_profile").doc(id).get()
+        ).data();
+        if (user_role.role === "Retailer") {
+          history.push("/");
+        } else if (user_role.role === "Wholesaler") {
+          history.push("/Checkout");
+        }
+      })
+      .catch((error) => alert(error.message));
+  };
   return (
     <div>
       <div className="AuthPageContainer-sc-8fip7o-0 epYhwJ">
         <div className="FormContainers__VerticalFormContainer-mmcuqf-2 jXhYOT">
-          <a href="/">
+          <Link to="/">
             <svg
               width="96"
               height="96"
@@ -30,7 +54,7 @@ function Login() {
                 fill="url(#linearGradient)"
               ></path>
             </svg>
-          </a>
+          </Link>
           <header className="AuthFormContainer__AuthFormHeader-sc-87on2w-2 jzRrbv">
             <h3 className="Heading-zo0nxg-0 hkRQqq">Login to Fieldfolio</h3>
           </header>
@@ -45,6 +69,9 @@ function Login() {
                       autoComplete="username"
                       placeholder="Email"
                       className="Input-ebgq5k-3 jewHIj"
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
                 </div>
@@ -56,12 +83,16 @@ function Login() {
                       autoComplete="password"
                       placeholder="Password"
                       className="Input-ebgq5k-3 jewHIj"
+                      required
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
                     />
                   </div>
                 </div>
               </div>
               <button
                 type="submit"
+                onClick={login}
                 className="Button_button__1YLw1 Button_primary__z80TZ default Button_isBlock__g_3iP"
               >
                 <div className="Button_buttonInner__vKlOI">
@@ -71,17 +102,17 @@ function Login() {
             </form>
             <div className="LoginForm_fineprint__Omj-R">
               <small>
-                <a
+                <Link
                   className="LoginForm_mutedLink__3tSCE"
-                  href="/reset-password"
+                  to="/reset-password"
                 >
                   Forgot your password?
-                </a>
+                </Link>
               </small>
             </div>
             <section>
               <small>
-                New to Fieldfolio? <a href="/signup">Sign up</a>
+                New to Fieldfolio? <Link to="/signup/retailer">Sign up</Link>
               </small>
             </section>
           </section>

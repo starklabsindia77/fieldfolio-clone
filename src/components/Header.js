@@ -1,8 +1,17 @@
 import React from "react";
 import "../css/Header.css";
 import { Link } from "react-router-dom";
+import { useStateValue } from "../config/StateProvider";
+import { auth } from "../config/firebase";
 
 function Header() {
+  const [{ user }] = useStateValue();
+  const handleAuthenticaton = () => {
+    //console.log(user);
+    if (user) {
+      auth.signOut();
+    }
+  };
   return (
     <nav className="HeaderNav">
       <ul className="HeaderNav_navList HeaderNav_isElastic__2pgDh">
@@ -17,8 +26,8 @@ function Header() {
                   y2="100%"
                   id="linearGradient"
                 >
-                  <stop stop-color="#53F" offset="0%"></stop>
-                  <stop stop-color="#309" offset="100%"></stop>
+                  <stop stopColor="#53F" offset="0%"></stop>
+                  <stop stopColor="#309" offset="100%"></stop>
                 </linearGradient>
               </defs>
               <path
@@ -31,15 +40,20 @@ function Header() {
         </li>
       </ul>
       <ul className="HeaderNav_navList">
-        <li className="NavItem_navItem__ObetJ NavItem_isPrimary__tSx7H">
-          <Link to="/signup/retailer">
-            <span className="showForPhoneOnly">Signup</span>
-            <span className="hideForPhone">Signup Free</span>
-          </Link>
-        </li>
+        {!user && (
+          <li className="NavItem_navItem__ObetJ NavItem_isPrimary__tSx7H">
+            <Link to="/signup/retailer">
+              <span className="showForPhoneOnly">Signup</span>
+              <span className="hideForPhone">Signup Free</span>
+            </Link>
+          </li>
+        )}
+
         <li className="NavItem_navItem__ObetJ">
-          <Link to="/login" className="Login">
-            Login
+          <Link to={!user ? "/login" : "/"}>
+            <div onClick={handleAuthenticaton} className="Login">
+              {user ? "Sign Out" : "Login"}
+            </div>
           </Link>
         </li>
       </ul>
